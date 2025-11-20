@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica Vida+ | Lista de Pacientes</title>
+</head>
+<body>
+    <h1>Lista de Pacientes Cadastrados</h1>
+    <p><a href="{{ url_for('cadastro') }}">→ Cadastrar Novo Paciente</a></p>
+
+    {% if pacientes %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for paciente in pacientes %}
+                <tr>
+                    <td>{{ paciente['id'] }}</td>
+                    <td>{{ paciente['nome'] }}</td>
+                    <td>{{ paciente['idade'] }}</td>
+                    <td>{{ paciente['telefone'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>A lista está vazia. Cadastre o primeiro paciente!</p>
+    {% endif %}
+</body>
+</html>
