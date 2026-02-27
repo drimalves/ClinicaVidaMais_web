@@ -9,7 +9,7 @@ Este projeto é um sistema web desenvolvido para auxiliar no gerenciamento da **
 - **Django / Flask** (ajuste conforme o que você estiver usando)
 - **HTML / CSS / JavaScript**
 - **Bootstrap**
-- **Banco de dados:**SQLite**
+- **Banco de dados:** **SQLite**
 
 ---
 
@@ -61,4 +61,5 @@ Projeto iniciado como estudo e implementação prática para otimizar o fluxo de
 📄 Licença
 Este projeto está sob a licença MIT.
 Sinta-se livre para usar, modificar e contribuir!
+
 
